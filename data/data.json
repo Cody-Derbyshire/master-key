@@ -1,7 +1,8 @@
 [
   {
-    "username": "test",
-    "password": "password",
-    "description": "description"
+    "username": "testusername",
+    "password": "testpassword",
+    "description": "testdescription",
+    "userId": "testuserid"
   }
 ]
