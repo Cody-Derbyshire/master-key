@@ -15,16 +15,18 @@ const UserDataList = () => {
   }, []);
   return (
     <>
+      <Link to={`/new`}>
+        <div className='add-button'>+</div>
+      </Link>
       {userDatas.map((userData) => {
         return (
-          <div className='data-card' key={userData.id}>
-            <Link to={`/${userData.id}`}>
-              <h2>name: {userData.name}</h2>
-            </Link>
-            <p>username: {userData.username}</p>
-            <p>password: {userData.password}</p>
-            <p>description: {userData.description}</p>
-          </div>
+          <Link to={`/${userData.id}`} key={userData.id}>
+            <div className='data-card'>
+              <h2>{userData.name}</h2>
+
+              <p>{userData.description}</p>
+            </div>
+          </Link>
         );
       })}
     </>

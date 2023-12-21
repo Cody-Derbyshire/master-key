@@ -32,6 +32,7 @@ router.get('/:id', getEntry, (req, res) => {
 // Create one
 router.post('/', async (req, res) => {
   const userData = new UserDataModel({
+    name: req.body.name,
     username: req.body.username,
     password: req.body.password,
     description: req.body.description,

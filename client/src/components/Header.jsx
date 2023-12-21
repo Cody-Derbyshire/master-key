@@ -3,7 +3,9 @@ import '../App.css';
 const Header = () => {
   return (
     <>
-      <h1>master-key</h1>
+      <div className='header'>
+        <p>master-key</p>
+      </div>
     </>
   );
 };
